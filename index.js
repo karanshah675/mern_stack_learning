@@ -43,7 +43,7 @@ const sound = (clicked) => {
       addimage(images[4]);
       break;
     case "k":
-      let kick_bass = new Audio("sounds/kick-bass.mp3");
+      let kick_bass = new Audio("sounds/Bass-Drum-Hit-Level-6b-www.fesliyanstudios.com.mp3");
       kick_bass.play();
       addimage(images[5]);
       break;
