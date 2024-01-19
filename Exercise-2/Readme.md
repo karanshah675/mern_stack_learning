@@ -1,1 +1,1 @@
-don't read me!!!
+<h1>practise of pseudo selector</h1>
