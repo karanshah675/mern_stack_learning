@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm karan shah</h1>
 <h3 align="center">this repo is made to add my daily progress in mern stack learning</h3>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=karanshah675" alt="karanshah675" /></a> </p>
+ 
 
  
 <p align="left">
