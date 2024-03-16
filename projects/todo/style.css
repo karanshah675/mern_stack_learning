@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  background: linear-gradient(150deg, rgba(2, 0, 36, 1), rgba(142, 9, 141, 1));
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+.todo {
+  background: #fff;
+  width: 100%;
+  max-width: 540px;
+  border-radius: 7px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+}
+.todo h3 {
+  color: #002765;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.todo-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+#todo-txt {
+  /* width: 100%; */
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+#todo-add-to-list {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: #002765;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #ff5945;
+  cursor: pointer;
+  box-shadow: 0 0 7px rgb(0 0 0 / 66%);
+  transition: all 1s ease-in-out;
+}
+#todo-add-to-list:hover {
+  transition: all 1s ease-in-out;
+  background: #f5422ebe;
+}
+.line {
+  color: #555;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+.checklist {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: space-between;
+}
+.checklist input[type="checkbox"] {
+  width: 1.3em;
+  height: 1.3em;
+  background: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.checked {
+  background: #ff5945 !important;
+}
+
+.check-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.checklist p {
+  margin-left: 10px;
+}
+.checklist i {
+  margin-right: 10px;
+  /* background-color: #555; */
+  /* width: 15px; */
+  /* height: 21px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 7px;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgb(0 0 0 / 66%);
+  transition: all 2s ease-in-out;
+  cursor: pointer;
+}
+
+.checklist i:hover {
+  background-color: #7e7b7b41;
+  transition: all 1s ease-in-out;
+}
