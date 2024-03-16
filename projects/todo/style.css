@@ -114,7 +114,7 @@
   background-color: #7e7b7b41;
   transition: all 1s ease-in-out;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .todo-input {
     flex-direction: column;
   }
