@@ -114,3 +114,18 @@
   background-color: #7e7b7b41;
   transition: all 1s ease-in-out;
 }
+@media only screen and (max-width: 400px) {
+  .todo-input {
+    flex-direction: column;
+  }
+  .todo-input {
+    background-color: #fff;
+  }
+  #todo-txt {
+    background-color: #edeef0;
+    width: 100%;
+    margin: 10px;
+    padding: 30px 20px 30px;
+    border-radius: 10px;
+  }
+}
