@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #191919;
+}
+.gllary-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+#backBtn, #nextBtn{
+    width: 50px;
+    margin: 40px;
+    cursor: pointer;
+}
+.gllary {
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.gllary div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+.gllary div img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: transform 0.5s ease-in-out
+}
+.gllary::-webkit-scrollbar {
+  display: none;
+}
+.gllary img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
