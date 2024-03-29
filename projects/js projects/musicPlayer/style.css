@@ -1,11 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins',sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
-.container{
-    width: 100%;
-    height: 100vh;
-    background: #333;
+body {
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.music-player {
+  width: 400px;
+  padding: 25px 50px;
+  text-align: center;
+  background: linear-gradient(rgba(206, 121, 52, 0.5), rgba(0, 0, 0, 0.712));
+  border-radius: 8px;
+}
+nav {
+  margin: 0 -40px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+nav .nav-btn i {
+  color: #fff;
+}
+.player-img {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.player-img img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+.song-details {
+  margin-top: 20px;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.song-details p {
+  color: rgba(220, 220, 220, 0.616);
+}
+.fav-icon {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/* Basic styling for the range input */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  background: #d3d3d377;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+}
+
+/* Define thumb styles */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.audio-controls {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  align-items: center;
+  margin-top: 20px;
+}
+.audio-controls i {
+  cursor: pointer;
+}
+.audio-controls div:nth-child(2) {
+  color: #000;
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.audio-controls div:nth-child(2) i {
+  margin-left: 3px;
 }

@@ -4,11 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>online music player</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e62445e2f1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
-        
+      <div class="music-player">
+        <nav>
+          <div class="nav-btn">
+            <i class="fa-solid fa-angle-left fa-xl"></i>
+          </div>
+          <div class="nav-btn">
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </div>
+        </nav>
+        <div class="player-img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1aFppcrxd7MPyxWeJtU_D2ecI98BdgH10w&s"
+            alt=""
+          />
+        </div>
+        <div class="song-details">
+          <div class="song-nm-and-author">
+            <h1 class="song-name">blinding-lights</h1>
+            <p class="author-name">the weeknd</p>
+          </div>
+          <div class="fav-icon">
+            <i class="fa-regular fa-heart fa-xl"></i>
+          </div>
+        </div>
+        <div class="audio">
+          <audio src="audio.mp3" controls hidden></audio>
+          <input type="range" id="myRange" min="0"  value="0">
+        </div>
+        <div class="audio-controls">
+            <div class="previos"><i class="fa-solid fa-backward-step fa-xl"></i></div>
+            <div class="play"><i class="fa-solid fa-play fa-2xl"></i></div>
+            <div class="next"><i class="fa-solid fa-forward-step fa-xl"></i></div>
+        </div>
+      </div>
     </div>
+
   </body>
 </html>
