@@ -1,5 +1,6 @@
 let stopwatch = document.querySelector(".stopwatch");
 let [seconds, hours, minutes] = [0, 0, 0];
+let s=0;
 
 let time = null;
 
