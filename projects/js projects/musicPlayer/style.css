@@ -22,6 +22,7 @@ body {
   text-align: center;
   background: linear-gradient(rgba(206, 121, 52, 0.5), rgba(0, 0, 0, 0.712));
   border-radius: 8px;
+ 
 }
 nav {
   margin: 0 -40px;
@@ -63,6 +64,9 @@ nav .nav-btn i {
   cursor: pointer;
 }
 /* Basic styling for the range input */
+.audio {
+  position: relative;
+}
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
@@ -102,6 +106,15 @@ input[type="range"]::-webkit-slider-thumb {
   align-items: center;
   border-radius: 50%;
 }
-.audio-controls div:nth-child(2) i {
-  margin-left: 3px;
+
+#range {
+  width: 5px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  height: 7px;
+
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
 }

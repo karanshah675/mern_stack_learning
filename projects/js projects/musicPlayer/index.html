@@ -33,11 +33,12 @@
             <p class="author-name">the weeknd</p>
           </div>
           <div class="fav-icon">
-            <i class="fa-regular fa-heart fa-xl"></i>
+            <i class="fa-regular fa-heart fa-xl fav-heart"></i>
           </div>
         </div>
-        <div class="audio" >
-          <audio src="audio.mp3" id="audio" controls hidden></audio>
+        <div class="audio">
+          <audio src="audio.mp3" id="audio" controls hidden muted></audio>
+          <div id="range"></div>
           <input type="range" id="myRange" min="0" value="0" />
         </div>
         <div class="audio-controls">
