@@ -13,27 +13,31 @@
   align-items: center;
 }
 .selection {
-  width: 250px;
+  width: 290px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   background: #ffffff9f;
   padding: 10px;
   border-radius: 10px;
-}
-.drop {
-  margin-top: 20px;
-  padding: 10px;
-  width: 250px;
-  display: flex;
   align-items: center;
-  background: #ffffff9f;
-  border-radius: 10px;
+  cursor: pointer;
 }
 .options {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  background: #ffffff9f;
+  border-radius: 5px;
+
+  font-size: 20px;
+  visibility: hidden;
 }
 .option {
-  margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
