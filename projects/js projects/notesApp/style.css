@@ -37,7 +37,7 @@
   gap: 5px;
 }
 .textarea {
-  width: 360px;
+  max-width: 360px;
   height: 140px;
   resize: none;
   border: 0;
@@ -50,7 +50,8 @@
 .heading {
   /* color: rgba(100, 100, 100, 0.678); */
   background: #ffffff7e;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   padding: 10px 8px;
   border-radius: 10px 10px 0 0;
   /* border-left-width: 10px; */
@@ -60,8 +61,12 @@
   font-size: 30px;
   border-bottom: 1px solid gray;
 }
-.note{
+.note {
   margin: 10px;
- 
 }
- 
+
+@media only screen and (max-width: 450px) {
+  .container {
+    padding: 10px;
+  }
+}
