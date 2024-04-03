@@ -7,10 +7,17 @@ let divForNotes = document.querySelector(".notes");
 heading.addEventListener("keypress", () => {
   heading.style.color = "black;";
 });
-newNotes.addEventListener("change", () => {
-  let p = document.createElement("p");
-  p.className = "textarea";
-  p.setAttribute("contenteditable", "true");
+newNotes.addEventListener("click", () => {
+  let note = document.createElement("div");
+  note.className="note"
+  note.innerHTML = `<input type="text" class="heading" placeholder="heading" />
+          <p
+            class="textarea"
+            name=""
+            id=""
+            contenteditable="true"
+            placeholder="write something..."
+          ></p>`;
 
-  divForNotes.appendChild(p);
+  divForNotes.appendChild(note);
 });

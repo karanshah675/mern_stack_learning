@@ -47,14 +47,19 @@
   border-radius: 0 0 10px 10px;
   background: #ffffff7e;
 }
-h1.heading {
-  color: rgba(100, 100, 100, 0.678);
+.heading {
+  /* color: rgba(100, 100, 100, 0.678); */
   background: #ffffff7e;
   width: 360px;
   padding: 10px 8px;
   border-radius: 10px 10px 0 0;
-  border-bottom: 1px solid gray;
   /* border-left-width: 10px; */
   outline: none;
   overflow: hidden;
+  border: 0;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+}
+.note{
+  margin: 10px;
 }
