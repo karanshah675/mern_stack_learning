@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>job application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="pngegg (2).png">
+  </head>
+  <body>
+    <img class="logo" src="PngItem_3125830.png" alt="">
+    <div class="container">
+      <div class="tit">
+        <img src="Screenshot 2023-04-05 234752.png" alt="" />
+      </div>
+      <form action="mailto:shahkaran0675@gmail.com" method="post">
+        <div class="form-content">
+          <div class="first">
+            <div class="item"></div>
+            <p>
+              Job application
+              <br />
+              <font>form desciption</font>
+            </p>
+          </div>
+          <div class="form-data">
+            <label for="firstname">first name<span>*</span></label>
+            <input placeholder="short text" type="text" id="firstname" />
+          </div>
+
+          <div class="form-data">
+            <label for="lastname">last name<span>*</span></label>
+            <input placeholder="short text" type="text" id="lastname" />
+          </div>
+
+          <div class="form-data">
+            <label for="email">Gender <span>*</span></label>
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="male"/>
+            
+            <label for="female">female</label>
+            <input type="radio" name="gender" value="female">Female
+            <label for="others">others</label>
+            <input type="radio" name="gender" value="others">Others
+          </div>
+
+          <div class="form-data">
+            <label for="job-role">Job-role<span>*</span></label>
+            <select name="job-role" id="job-role">
+              <option value="">Select role</option>
+              <option value="web-dev">Web devloper</option>
+              <option value="app-dev">application devloper</option>
+              <option value="web-design">Web designer</option>
+              <option value="Webdevloper">Application designer</option>
+              <option value="database">Database manager</option>
+            </select>
+          </div>
+          <div class="form-data address">
+            <label for="address">Address<span>*</span></label>
+            <input placeholder="long text" type="text" id="address" />
+          </div>
+
+          <div class="form-data">
+            <label for="city">city<span>*</span></label>
+            <input placeholder="short text" type="text" id="city" />
+          </div>
+
+          <div class="form-data">
+            <label for="phone">Phone<span>*</span></label>
+            <input placeholder="short text" type="number" id="phone" />
+          </div>
+
+          <div class="form-data">
+            <label for="date">Starting Date<span>*</span></label>
+            <input
+              placeholder="short text"
+              type="date"
+              value="2022-01-22"
+              id="date"
+            />
+          </div>
+
+          <div class="form-data">
+            <label for="cv">Upload resume<span>*</span></label>
+            <input placeholder="short text" type="file" id="cv" />
+          </div>
+        </div>
+        <div class="btn-con">
+          <button type="submit">Apply now<span>*</span></button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

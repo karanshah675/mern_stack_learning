@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <style>
+      .container {
+        background-color: lightcoral;
+        padding: 14px;
+        margin: 14px;
+      }
+      .childContainer {
+        background-color: lightgreen;
+        padding: 14px;
+        margin: 14px;
+      }
+      .child {
+        background-color: lightseagreen;
+        padding: 14px;
+        margin: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="childContainer">
+        <div class="child">i am your child</div>
+      </div>
+    </div>
+    <script>
+      //?event bubbling means when we clicked child so that parent automatically clicked, to stop this we use function e.stopPropagation();
+      //e-> is event object
+      document.querySelector(".container").addEventListener("click", () => {
+        alert("container is clicked");
+      });
+      document
+        .querySelector(".childContainer")
+        .addEventListener("click", (e) => {
+          e.stopPropagation();
+          alert("childContainer is clicked");
+        });
+      document.querySelector(".child").addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        if (e.altKey) alert("child is clicked");
+        else alert("press with alter key");
+        console.log(e);
+      });
+    </script>
+  </body>
+</html>

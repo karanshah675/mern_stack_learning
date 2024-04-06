@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  line-height: 1.2;
+}
+.container {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  box-sizing: border-box;
+  padding: 14px;
+  display: flex;
+  gap: 20px;
+  background-color: #1a1919;
+  color: #fff;
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.image {
+  border-radius: 8px;
+  position: relative;
+}
+.image img {
+  height: 100%;
+  border-radius: 5px;
+}
+.time-line {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.801);
+  padding: 3px;
+  border-radius: 3px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 5px;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* .content {
+} */
+.main-title {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.sub-title {
+  display: flex;
+  word-spacing: 2px;
+  color: #aaaaaa;
+}

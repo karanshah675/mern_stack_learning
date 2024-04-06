@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.intro {
+  background-image: url(pexels-valeriy-ryasnyanskiy-3840191.jpg);
+
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.intro-text {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  font-size: 40px;
+  /* background-color: aliceblue; */
+  color: #fff;
+  letter-spacing: 0.5rem;
+  /* letter-spacing: 20px; */
+  line-height: 1.5;
+  font-weight: 0;
+}
+.intro-text span {
+  font-size: 28px;
+}
+.intro-text h2 {
+  text-transform: uppercase;
+}
+.text {
+  background-color: #161619;
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+}
+.textbg {
+  padding: 100px;
+  font-size: 80px;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.textbg span {
+  font-size: 140px;
+  margin-left: 20px;
+}
+/* .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    padding: 200px 300px;
+    text-align: justify;
+    gap: 10px 80px;
+    justify-content: center;
+    align-items: center;
+
+}
+.card1,.card2,.card3{
+    min-width: 320px;
+    height: 500px ;
+    border-radius: 8px;
+    box-shadow: 2px 3px 5px black;
+   
+}
+.content{
+    margin: 30px;
+} */
+
+.image,
+img {
+  width: 100%;
+  margin: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.work {
+  display: grid;
+  gap: 40px ;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
+
+  margin: 50px auto;
+  padding: 60px;
+}
+/* .grid_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+.card {
+  max-width: 400px;
+  height: 500px;
+ margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  transition: 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+  transition: 0.2s ease-in-out;
+}
+.content {
+  padding: 20px;
+  text-align: justify;
+}
+.content h2 {
+  margin-bottom: 10px;
+}
+.contact {
+  margin-top: 100px;
+  display: flex;
+  color: #fff;
+  line-height: 1.5rem;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+.myself {
+  padding: 70px 80px 100px;
+  background-color: #515603;
+}
+.myself h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+
+  text-transform: capitalize;
+}
+.about {
+  padding: 70px 80px 100px;
+  background-color: #722300;
+}
+
+.about h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+
+  text-transform: capitalize;
+}
+.copyright {
+  font-size: 20px;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: #161619;
+}
+@media(max-width:720px)
+{
+    .intro-text{
+        font-size: 15px;
+        
+    }
+    .intro-text span{
+        font-size: 10px;
+        
+    }
+    .contact{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2eee0;
+  font-family: "docs-Roboto", Helvetica, Arial, sans-serif;
+}
+.logo{
+  position: sticky;
+  left: 10px;
+  top: 20px;
+  width: 15%;
+}
+.container {
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+label {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.form-content {
+  margin: 20px;
+}
+.form-data {
+  background-color: #fff;
+  display: flex;
+  margin: 20px;
+  padding: 20px 20px 40px 30px;
+  border-radius: 8px;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.btn-con {
+  margin: 20px;
+  text-align: end;
+}
+button,
+.btn-con {
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+img {
+  border-radius: 8px;
+  width: 90%;
+}
+button {
+  background-color: #ccc;
+  font-size: 15px;
+  color: black;
+  transition: 0.5s ease-in;
+  padding: 20px;
+}
+button:hover {
+  background-color: #3d8f2d;
+  transition: 0.5s ease-out;
+  color: #fff;
+  cursor: pointer;
+}
+input {
+  margin-top: 30px;
+  width: 40%;
+  text-transform: capitalize;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px dotted gray;
+}
+input:focus {
+  outline: none;
+}
+#address{
+  width: 60%;
+}
+
+select {
+  padding: 10px;
+  width: 35%;
+  border: none;
+  border-bottom: 1px dotted gray;
+  font-size: 20px;
+  color: grey;
+}
+.head {
+  font-size: 20px;
+}
+.tit {
+  text-align: center;
+  color: #2b3467;
+  margin-bottom: 40px;
+
+  font-size: 20px;
+}
+
+.form-data span {
+  margin-left: 5px;
+  font-size: 25px;
+  color: #fc2947;
+}
+
+p {
+  font-size: 30px;
+}
+font {
+  color: grey;
+  font-size: 20px;
+}
+.first {
+  background-color: white;
+  margin: 20px;
+  padding: 0 0 40px 0;
+  border-radius: 8px;
+}
+.item {
+  background-color: #3d8f2d;
+  height: 15px;
+  border: none;
+
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.item,
+p {
+  padding-left: 30px;
+}
+#cv{
+  padding: 10px;
+}
+input::file-selector-button {
+  
+  background-color: #ccc;
+  padding: 0.5em;
+  border: thin solid grey;
+  border-radius: 3px;
+  color: black;
+  transition: 0.5s ease-in;
+}
+input::file-selector-button:hover{
+  background-color: goldenrod;
+  transition: 0.5s ease-out;
+  color: #fff;
+  cursor: pointer;
+}

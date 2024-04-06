@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 400;
+  color: #666;
+  font-family: 'Raleway', sans-serif;
+}
+.one,
+.two,
+.three {
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment :fixed;
+}
+.one {
+  min-height: 100%;
+  background-image:url(pexels-aleksandar-pasaric-3629227.jpg);
+}
+.two{
+    background-image: url(pexels-julio-gm-4472152.jpg);
+    min-height: 400px;
+}
+.three{
+    min-height: 400px;
+    background-image: url(pexels-valeriy-ryasnyanskiy-3840191.jpg);
+}
+.first-text {
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    color: #fff;
+    font-size: 30px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.first-textbg {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  
+}
+.data-light{
+    background-color: #fff;
+    color: #666;
+    /* width: 100%; */
+    text-align: center;
+    padding: 30px 70px;
+    font-size: 20px;
+
+}
+h2{
+    text-transform: capitalize;
+}
+.second-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+   
+}
+.second-textbg{
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+  
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 0.75rem;
+    text-transform: uppercase;
+}
+.data-dark{
+    background-color: #313534;
+    color: #fff;
+    text-align: center;
+    padding: 30px 70px;
+    font-size: 19px;
+}
+.third-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+   
+}
+.third-textbg{
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.75rem;
+    font-size: 30px;
+}

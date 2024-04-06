@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>callback</title>
+  </head>
+  <body>
+    <script>
+      //?callback of a function means we pass function as argument
+      const fn = (arg) => {
+        let h1 = (document.createElement("div").innerHTML = arg);
+        document.getElementsByTagName("body")[0].append(h1);
+        // console.log(arg);
+      };
+      const callback = (arg, fn) => {
+        console.log(arg);
+        fn("hi last function is called");
+      };
+      const loadScript = (arg, callback) => {
+        let sc = (document.createElement("script").src = arg);
+        callback("karan", fn);
+      };
+      loadScript(
+        "https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",
+        callback
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Try And Catch</title>
+  </head>
+  <body>
+    <script>
+      // let num1=prompt("Enter you first number : ");
+      // let num2=prompt("Enter you second number : ");
+      // if(isNaN(num1) || isNaN(num2)){
+      //     throw SyntaxError("this numbers is not allowed");
+      // }
+
+      //   let sum = 30;
+      //   try {
+      //     sum / n;
+      // } catch (error) {
+      //     console.log("this is not allwed " + error);
+      // }
+
+      //?even after rturning fuction execute finally block <- interview question
+      const final = () => {
+        let num3 = 55;
+        try {
+          console.log("division of :" + num3 / n);
+          return false;
+        } catch (error) {
+          console.log("this is not allowed" + error);
+          return true;
+        } finally {
+          console.log("this function is over");
+        }
+      };
+      console.log(final());
+    </script>
+  </body>
+</html>

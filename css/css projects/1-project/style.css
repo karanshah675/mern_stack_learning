@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: powderblue;
+    border: 10px solid rgb(53, 167, 202);
+}
+.coponent{
+    margin-top: 40px;
+    /* min-height: 100vh; */
+    
+}
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.image-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.image{
+    height: 400px; 
+    
+  border-radius: 20%;
+
+}
+.about-section h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.about-section p{
+    text-align: end;
+    font-size: 20px;
+    line-height: 2;
+}
+.history-section{
+    margin-top: 40px;
+}
+.history-section h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.history-section p{
+    line-height: 2;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.biography h2{
+    margin: 40px 0 30px;
+    font-size: 30px;
+
+}
+.biography ul{
+    margin-left: 50px;
+}
+.biography li{
+    line-height: 2;
+    font-size: 20px;
+}
+.company h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+footer{
+    margin: 30px 0;
+    text-align: end;
+}
+footer p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.company p{
+    font-size: 20px;
+    line-height: 2;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+.company ol{
+   list-style: decimal;
+}
+.company li{
+   font-size: 30px;
+}
+.company img{
+    margin-left: 20px;
+    height: 300px;
+    border-radius: 8px;
+}
+.company p{
+    text-align: justify;
+    line-height: 2;
+    font-size: 20px;
+}.company{
+
+    text-align: center;
+}

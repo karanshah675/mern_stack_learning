@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+/* navbar */
+.nav-bar {
+  background-color: #270082 ;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+  color: #fff;
+
+}
+.nav-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+}
+/* hero-section */
+.hero {
+
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  background-position: center;
+}
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  width: 100%;
+  line-height: 2;
+  transform: translate(-50%, -50%);
+}
+.hero-content h1 {
+  font-size: 50px;
+  margin: 10px;
+}
+.emoji {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+ 
+}
+li{
+  animation: karan 1s infinite;
+  position: relative;
+  animation-direction: alternate;
+  /* animation-play-state: paused; */
+  font-size: 30px;
+  text-align: center;
+  animation-delay: calc(var(--order)*100ms);
+  list-style: none;
+  transition: 0.2 ease-in-out;
+  padding: 20px;
+}
+
+@keyframes karan {
+  from {
+    top: 0;
+    transition: 0.2 ease-in-out;
+  }
+  /* transition: 0.2 ease-in-out; */
+  to {
+    transition: 0.2 ease-in-out;
+    top: 100%;
+  }
+}
+footer{
+  background-color: #270082;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+}
