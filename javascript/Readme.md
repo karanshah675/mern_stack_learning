@@ -1,4 +1,3 @@
-```markdown
 # JavaScript Concepts and Notes
 
 This `README.md` file contains notes on various JavaScript concepts for quick reference.
