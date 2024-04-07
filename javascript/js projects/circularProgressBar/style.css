@@ -11,6 +11,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+.container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 1s ease-in-out;
+}
 .skill {
   width: 160px;
   height: 160px;
@@ -39,19 +48,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-#number {
+.topic {
+  color: #555;
+  font-weight: bold;
+}
+.number {
   font-weight: 600px;
   color: #555;
   font-size: 25px;
 }
-circle {
+.num1 {
   fill: none;
-  stroke: url(#GradientColor);
+  stroke: url(#GradientColor1);
   stroke-width: 20px;
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
-  animation: karan 2s linear  forwards;
+  animation: karan 2s linear forwards;
+}
+.num2 {
+  fill: none;
+  stroke: url(#GradientColor2);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: karan2 2s linear forwards;
+}
+.num3 {
+  fill: none;
+  stroke: url(#GradientColor3);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: karan3 2s linear forwards;
 }
 svg {
   position: absolute;
@@ -60,6 +90,22 @@ svg {
 }
 @keyframes karan {
   100% {
-    stroke-dashoffset: 165;
+    stroke-dashoffset: 65;
+  }
+}
+@keyframes karan2 {
+  100% {
+    stroke-dashoffset: 90;
+  }
+}
+@keyframes karan3 {
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    transition: all 1s ease-in-out;
   }
 }

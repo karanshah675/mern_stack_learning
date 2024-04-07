@@ -1,10 +1,10 @@
 # this is drag and drop website
 
-[https://karanshah675.github.io/mern_stack_learning/projects/js%20projects/dragDrop/]
+[https://karanshah675.github.io/mern_stack_learning/javascript/js%20projects/dragDrop/]
 
 ## What i learned:
 
-### 1. dragstart event listener : ### 2. draggable Attribute : this is attribute allow us to select item.
+### 1. dragstart event listener : this is fired when we drag something.
 
 ### 2. draggable Attribute : this is attribute allow us to select item.
 
