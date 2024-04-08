@@ -7,8 +7,9 @@
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #08001f, #30197d);
-  color: #fff;
+  /* background: linear-gradient(45deg, #08001f, #30197d); */
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: #1e212d;
   position: relative;
   /* overflow: hidden; */
 }
@@ -39,7 +40,7 @@
   content: "";
   width: 180px;
   height: 180px;
-  background: #f41b75;
+  background: #003c43;
   position: absolute;
 
   top: -100px;
@@ -52,7 +53,7 @@
   content: "";
   width: 180px;
   height: 180px;
-  background: #419aff;
+  background: #3a8841;
   position: absolute;
   right: -50px;
   bottom: -100px;
@@ -60,12 +61,12 @@
   z-index: -1;
   animation: anim2 2s ease-in-out infinite alternate;
 }
-.clock span{
-    font-size: 80px;
-    width: 110px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
+.clock span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
 }
 .clock span::after {
   font-size: 16px;
@@ -74,16 +75,16 @@
   left: 50%;
   transform: translateX(-50%);
 }
-#date p{
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    /* border: 1px solid #08001f; */
-    padding: 0 10px;
-    border-radius: 70px;
-    background: #ffffff27;
+#date p {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* border: 1px solid #08001f; */
+  padding: 0 10px;
+  border-radius: 70px;
+  background: #00000018;
 }
 #hours::after {
   content: "hours";
@@ -128,39 +129,39 @@
 }
 
 @media screen and (max-width: 450px) {
-    .hero{
-        padding: 20px;
-    }
-    .clock{
-        width: 100%;
-        /* max-width: 430px; */
-    }
-    .clock span{
-        font-size: 30px;
-        width: 50px;
-    }
-    .clock span::after{
-        font-size: 10px;
-        /* width: 30px; */
-          /* left: 60%; */
-    }
-    
-    .hero::after,.hero::before{
-        width: 90px;
-        height: 90px;
-        
-    }
-    .hero::before{
-        left: 0;
-        animation: anim3 2s ease-in-out infinite alternate;
-    }
-    .hero::after{
-        right: 0;
-        animation: anim4 2s ease-in-out infinite alternate;
-    }
-    #date p{
-        font-size: 17px;
-         padding: 2px 13px;
-    }   
- 
+  .hero {
+    padding: 20px;
+  }
+  .clock {
+    width: 100%;
+    /* max-width: 430px; */
+  }
+  .clock span {
+    font-size: 30px;
+    width: 50px;
+  }
+  .clock span::after {
+    font-size: 10px;
+    /* width: 30px; */
+    /* left: 60%; */
+    font-weight: bold;
+  }
+
+  .hero::after,
+  .hero::before {
+    width: 90px;
+    height: 90px;
+  }
+  .hero::before {
+    left: 0;
+    animation: anim3 2s ease-in-out infinite alternate;
+  }
+  .hero::after {
+    right: 0;
+    animation: anim4 2s ease-in-out infinite alternate;
+  }
+  #date p {
+    font-size: 17px;
+    padding: 2px 13px;
+  }
 }
