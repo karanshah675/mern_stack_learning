@@ -5,92 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual key board</title>
     <link rel="stylesheet" href="style.css" />
+     <script
+      src="https://kit.fontawesome.com/e62445e2f1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <input type="text" name="text" />
+      <input type="text" class="output" name="text" />
       <div class="keyboard">
         <section class="first-line">
           <div class="extra">
-            <input type="button" value="1" />
+            <input type="button"  class="btn" value="`" />
+            <p>`</p>
+          </div>
+          <div class="extra">
+            <input type="button"  class="btn" value="1" />
             <p>!</p>
           </div>
           <div class="extra">
-            <input type="button" value="2" />
+            <input type="button"  class="btn" value="2" />
             <p>@</p>
           </div>
           <div class="extra">
-            <input type="button" value="3" />
+            <input type="button"  class="btn" value="3" />
             <p>#</p>
           </div>
           <div class="extra">
-            <input type="button" value="4" />
+            <input type="button"  class="btn" value="4" />
             <p>$</p>
           </div>
           <div class="extra">
-            <input type="button" value="5" />
+            <input type="button"  class="btn" value="5" />
             <p>%</p>
           </div>
           <div class="extra">
-            <input type="button" value="6" />
+            <input type="button"  class="btn" value="6" />
             <p>^</p>
           </div>
           <div class="extra">
-            <input type="button" value="7" />
+            <input type="button"  class="btn" value="7" />
             <p>&</p>
           </div>
           <div class="extra">
-            <input type="button" value="8" />
+            <input type="button"  class="btn" value="8" />
             <p>*</p>
           </div>
           <div class="extra">
-            <input type="button" value="9" />
+            <input type="button"  class="btn" value="9" />
             <p>(</p>
           </div>
           <div class="extra">
-            <input type="button" value="0" />
+            <input type="button"  class="btn" value="0" />
             <p>)</p>
           </div>
           <div class="extra">
-            <input type="button" value="-" />
+            <input type="button"  class="btn" value="-" />
             <p>_</p>
           </div>
           <div class="extra">
-            <input type="button" value="=" />
+            <input type="button"  class="btn" value="=" />
             <p>+</p>
           </div>
-          <div class="extra">
-            <input type="button" value="backspace" />
-            <p>+</p>
-          </div>
+           
+            <input type="button"  class="btn" value="back" />
+          
         </section>
         <section class="second-line">
-          <input type="button" value="Q" />
-          <input type="button" value="W" />
-          <input type="button" value="E" />
-          <input type="button" value="R" />
-          <input type="button" value="T" />
-          <input type="button" value="Y" />
-          <input type="button" value="U" />
-          <input type="button" value="I" />
-          <input type="button" value="O" />
-          <input type="button" value="P" />
+          
+          <input type="button"  class="btn" value="tab" />
+          <input type="button"  class="btn" value="q" />
+          <input type="button"  class="btn" value="w" />
+          <input type="button"  class="btn" value="e" />
+          <input type="button"  class="btn" value="r" />
+          <input type="button"  class="btn" value="t" />
+          <input type="button"  class="btn" value="y" />
+          <input type="button"  class="btn" value="u" />
+          <input type="button"  class="btn" value="i" />
+          <input type="button"  class="btn" value="o" />
+          <input type="button"  class="btn" value="p" />
 
           <div class="extra">
-            <input type="button" value="[" />
+            <input type="button"  class="btn" value="[" />
             <p>{</p>
           </div>
           <div class="extra">
-            <input type="button" value="]" />
+            <input type="button"  class="btn" value="]" />
             <p>}</p>
           </div>
           <div class="extra">
-            <input type="button" value="\" />
+            <input type="button"  class="btn last" value="\" />
             <p>|</p>
           </div>
         </section>
+        <section class="third-line">
+          <input type="button"  class="btn" value="caps">
+          <input type="button"  class="btn" value="a">
+          <input type="button"  class="btn" value="s">
+          <input type="button"  class="btn" value="d">
+          <input type="button"  class="btn" value="f">
+          <input type="button"  class="btn" value="g">
+          <input type="button"  class="btn" value="h">
+          <input type="button"  class="btn" value="j">
+          <input type="button"  class="btn" value="k">
+          <input type="button"  class="btn" value="l">
+          <div class="extra">
+            <input type="button"  class="btn" value=":" />
+            <p>;</p>
+          </div>
+          <div class="extra">
+            <input type="button"  class="btn" value="'" />
+            <p>"</p>
+          </div>
+          <input type="button"  class="btn" value="enter">
+        </section>
+        <section class="forth-line">
+          <input type="button"  class="btn" value="shift">
+          <input type="button"  class="btn" value="z">
+          <input type="button"  class="btn" value="x">
+          <input type="button"  class="btn" value="c">
+          <input type="button"  class="btn" value="v">
+          <input type="button"  class="btn" value="b">
+          <input type="button"  class="btn" value="n">
+          <input type="button"  class="btn" value="m">
+           <div class="extra">
+            <input type="button"  class="btn" value="," />
+            <p><</p>
+          </div>
+           <div class="extra">
+            <input type="button"  class="btn" value="." />
+            <p>></p>
+          </div>
+           <div class="extra">
+            <input type="button"  class="btn" value="/" />
+            <p>?</p>
+          </div>
+          <input type="button"  class="btn shift-rt" value="shift">
+        </section>
+        <section class="fifth-line">
+          <input type="button"  class="btn" value="clt">
+          <input type="button"  class="btn" value="fn">
+          <div class="windows">
+            <input type="button"  class="btn win" value="w">
+            <i class="fa-brands fa-windows fa-2xl" style="color: #000000;"></i>
+          </div>
+          <input type="button"  class="btn" value="alt">
+          <input type="button"  class="btn space" value="">
+          <input type="button"  class="btn" value="alt">
+          <input type="button"  class="btn clt-rt" value="clt">
+        </section>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
