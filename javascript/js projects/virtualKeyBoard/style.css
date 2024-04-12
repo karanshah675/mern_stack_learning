@@ -25,81 +25,86 @@
   padding: 40px;
   border-radius: 10px;
 }
-.output{
-   width: 100%;
-    max-width: 585px;
-    height: 150px;
-    margin: 20px 0;
-    background: #000;
-    border: 4px solid gray;
+
+.output {
+  resize: none;
+  width: 100%;
+  max-width: 585px;
+  height: 150px;
+  margin: 20px 0;
+  background: #000;
+  border: 4px solid gray;
+  color: rgb(8, 255, 8);
+  font-size: 20px;
+  padding-left: 5px;
 }
+
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px 
+  gap: 10px;
 }
-.btn{
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 24px;
-    border-radius: 10px;
-    border: 0;
-    box-shadow: 1px 1px 10px #000;
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 1px 1px 10px #000;
 }
-.extra{
-    position: relative;
+.extra {
+  position: relative;
 }
-.extra :nth-child(2){
-    position: absolute;
-    top: 9px;
-    left: 7px;
-    font-size: 18px;
+.extra :nth-child(2) {
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  font-size: 18px;
 }
-.last{
-    padding: 10px 35px;
-   
+.last {
+  padding: 10px 35px;
 }
-input[value="caps"]{
-    font-size: 20px;
-    padding: 10px 45px;
+input[value="caps"] {
+  font-size: 20px;
+  padding: 10px 45px;
+}
 
+input[value="tab"] {
+  font-size: 20px;
+  padding: 10px 36px;
 }
-input[value="tab"]{
-    font-size: 20px;
-    padding: 10px 36px;
+input[value="back"] {
+  font-size: 20px;
+  padding: 10px 40px;
 }
-input[value="back"]{
-    
-    font-size: 20px;
-    padding: 10px 40px;
+input[value="enter"] {
+  font-size: 20px;
+  padding: 10px 45px;
 }
-input[value="enter"]{
-    font-size: 20px;
-    padding: 10px 45px;
-     
+input[value="shift"] {
+  font-size: 20px;
+  padding: 10px 60px;
 }
-input[value="shift"]{
-    font-size: 20px;
-    padding: 10px 60px;
+input[value="clt"],
+input[value="fn"],
+input[value="alt"] {
+  font-size: 20px;
+  /* padding: 10px 60px; */
 }
-input[value="clt"],input[value="fn"],input[value="alt"]{
-    font-size: 20px;
-    /* padding: 10px 60px; */
+.windows {
+  position: relative;
 }
-.windows{
-    position: relative;
+.win {
+  font-size: 20px;
+  color: #fff;
 }
-.win{
-    font-size: 20px;
-    color: #fff;
+.fa-windows {
+  position: absolute;
+  top: 36px;
+  left: 12px;
 }
-.fa-windows{
-    position: absolute;
-    top: 36px;
-    left: 12px;
+
+.space {
+  padding: 10px 260px;
 }
- 
- .space{
-    padding: 10px 260px;
- }
