@@ -54,11 +54,10 @@ btn.forEach((e) => {
     } else if (ele.target.classList.contains("space")) {
       display.value += " ";
       clickAdd(e);
-    }else if(e.classList.contains("meta")){
+    } else if (e.classList.contains("meta")) {
       clickAdd(e);
       return;
-    } 
-    else {
+    } else {
       if (shift == true && e.parentElement.classList.contains("extra")) {
         display.value += e.nextElementSibling.innerHTML;
         clickAdd(e);
