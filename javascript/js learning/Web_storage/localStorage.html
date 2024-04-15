@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      const names = ["karan", "rock", "justin", "rehxa"];
+      // Storing data in localStorage
+      localStorage.setItem("name", "karan");
+      localStorage.setItem("names", JSON.stringify(names));
+      // Retrieving data from localStorage
+      const data = localStorage.getItem("names");
+      document.write(data);
+      // Removing data from localStorage
+      localStorage.removeItem("key");
+      // Clearing all data from localStorage
+      //   localStorage.clear();
+    </script>
+  </body>
+</html>

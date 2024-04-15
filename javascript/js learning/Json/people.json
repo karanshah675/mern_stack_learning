@@ -1,0 +1,22 @@
+[
+    {
+        "name":"karan",
+        "age":19,
+        "skills":["html","css","js"]
+    },
+    {
+        "name":"jay",
+        "age":13,
+        "skills":["html","css"]
+    },
+    {
+        "name":"rock",
+        "age":22,
+        "skills":["html","css","js","gym"]
+    },
+    {
+        "name":"justin",
+        "age":25,
+        "skills":["html","css","js","singging"]
+    }
+]
