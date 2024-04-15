@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-
   <body>
     <script>
-      //once we add name that will save in local storage till we not cleared
+      //once we add name that will save in session storage till we not close the tab
       let addname = prompt("enter your name");
 
       const names = ["karan", "rock", "justin", "rehxa"];
 
       // Storing data in localStorage
-      localStorage.setItem("name", "karan");
-      localStorage.setItem("names", JSON.stringify(names));
-      localStorage.setItem("personnames", addname);
+      sessionStorage.setItem("name", "karan");
+      sessionStorage.setItem("names", JSON.stringify(names));
+      sessionStorage.setItem("personnames", addname);
       // Retrieving data from localStorage
-      const data = localStorage.getItem("names");
+      const data = sessionStorage.getItem("names");
       document.write(data);
       // Removing data from localStorage
-      localStorage.removeItem("key");
+      sessionStorage.removeItem("key");
       // Clearing all data from localStorage
       //   localStorage.clear();
     </script>
