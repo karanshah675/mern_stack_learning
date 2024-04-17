@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>find pokemon</title>
+  </head>
+  <body>
+    <div class="">
+      <input type="text" id="pokemonName" name="pokemonName" />
+      <button id="find" onclick="fetchpokemon(pokemonName.value)">
+        Find pokemon
+      </button>
+    </div>
+    <img src="" alt="" id="pokemonImg" style="display: none" />
+    <script>
+      //we can use fetch method using aysnc and await also.
+      const fetchpokemon = async (msg) => {
+        //we created one try block to handle the error if api is not fetched.
+        try {
+          const pokemonName = msg.toLowerCase();
+          //we use await to get fetch because fetch is giving some response in promise
+          const response = await fetch(
+            `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
+          );
+          //we check the api is fethced or not
+          if (!response.ok) {
+            throw new Error("we can't find your api");
+          }
+          //we convert response into json format
+          const data = await response.json();
+          const imng = document.getElementById("pokemonImg");
+          imng.src = data.sprites.front_default;
+          imng.style.display = "block";
+        } catch (err) {
+          console.log(err);
+        }
+      };
+    </script>
+  </body>
+</html>
