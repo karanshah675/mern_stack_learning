@@ -7,24 +7,40 @@
 body {
   width: 100%;
   height: 100vh;
-  background: #0f1a38;
-  color: #fff;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
-header {
+.header {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .header-container {
-  margin: 100px 0;
+  margin: 50px 0;
   /* width: 600px; */
   flex-direction: column;
-  background: #ffffff31;
+  background: #adabab31;
+  /* background: purple; */
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px #00000070;
+  backdrop-filter: blur(10px);
+  position: relative;
 }
-header h1 {
+/* header::before {
+  content: "";
+  width: 750px;
+  height: 250px;
+  background: 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: -1;
+} */
+.header h1 {
   text-align: center;
 }
 .calculate {
@@ -34,16 +50,83 @@ header h1 {
   gap: 20px;
 }
 #mass {
+  box-shadow: 0 0 10px #00000070;
   padding: 10px;
   font-size: 20px;
-  backdrop-filter: blur(10px);
-}
-.select{
   border: 0;
   outline: none;
   border-radius: 8px;
-  background: #242020;
+}
+.select {
+  border: 0;
+  background: #2420201e;
   font-size: 18px;
   padding: 10px;
+  color: #242020;
+  outline: none;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.calculateWeight {
+  background: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3N3aXR5NHVoNHQ4NDVhcTBuaG80N3VxcXZtazE3emk5ZWtyZHE5NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT8qBfjJhOmNPTVWU0/giphy.gif");
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
   color: #fff;
 }
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+.image img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.hero {
+  width: 670px;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  width: 100%;
+  background: rgba(15, 16, 56, 0.699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 29px;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  height: 350px;
+}
+.description p {
+  background: #d4d2d22f;
+  text-align: center;
+  border-radius: 10px;
+}
+.description p span {
+  font-weight: bold;
+}
+/* .flex-container {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  overflow: hidden;
+}
+.image{
+  margin-left: -40px;
+}
+.heading{
+  background:#d4d2d22f ;
+  border-radius: 10px;
+  text-align: center;
+} */
