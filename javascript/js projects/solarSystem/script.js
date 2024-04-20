@@ -101,7 +101,7 @@ caclBtn.addEventListener("click", () => {
       } else {
         description.firstElementChild.style.backgroundColor = "#d4d2d22f";
       }
-    }, 1000);
+    }, 800);
   } else if (select.value !== "none" && mass.value === "") {
     plantImg.style.background = `url('images/galaxy.jpg `;
     plantImg.style.backgroundSize = `contain`;

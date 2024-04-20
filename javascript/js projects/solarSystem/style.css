@@ -79,6 +79,10 @@ body {
   align-items: center;
   /* overflow: hidden; */
 }
+.image{
+  background-color: #ffffff1a;
+  backdrop-filter: blur(20px);
+}
 .image .img {
   width: 350px;
   height: 350px;
@@ -86,7 +90,7 @@ body {
   overflow: hidden;
   background: url("images/galaxy.jpg");
   background-size: contain;
-  transition: background 0.9s linear;
+  transition: background 1.2s linear;
 }
 .hero {
   width: 570px;
@@ -134,6 +138,14 @@ body {
     left: 0;
   }
 }
+@keyframes anim2 {
+  0% {
+    left: -160px;
+  }
+  100% {
+    left: 0;
+  }
+}
 @media screen and (max-width: 450px) {
   .header h1 {
     font-size: 16px;
@@ -163,5 +175,9 @@ body {
   .description {
     height: 150px;
     font-size: 17px;
+    left: -160px;
+  }
+  .animationStart {
+    animation: anim2 0.9s forwards ease-in-out;
   }
 }
