@@ -6,7 +6,7 @@
 }
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   padding: 50px 0;
 }
@@ -26,7 +26,6 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px #00000070;
-  backdrop-filter: blur(10px);
   position: relative;
 }
 .header h1 {
@@ -56,7 +55,6 @@ body {
   color: #242020;
   outline: none;
   border-radius: 8px;
-  backdrop-filter: blur(10px);
 }
 
 .calculateWeight {
@@ -88,7 +86,7 @@ body {
   overflow: hidden;
   background: url("images/galaxy.jpg");
   background-size: contain;
-  transition: background 0.4s linear;
+  transition: background 0.9s linear;
 }
 .hero {
   width: 570px;
@@ -137,7 +135,6 @@ body {
   }
 }
 @media screen and (max-width: 450px) {
- 
   .header h1 {
     font-size: 16px;
   }
@@ -157,14 +154,14 @@ body {
     font-size: 16px;
   }
   .image .img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
   .hero {
-    width: 350px;
+    padding: 0 5px;
   }
   .description {
-    height: 90px;
-    font-size: 10px;
+    height: 150px;
+    font-size: 17px;
   }
 }

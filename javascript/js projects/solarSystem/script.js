@@ -87,7 +87,7 @@ caclBtn.addEventListener("click", () => {
     );
     plantImg.style.background = `url('images/${select.value.toLowerCase()}.jpg `;
     plantImg.style.backgroundSize = `contain`;
-    plantImg.style.transition = `background 0.4s linear`;
+    plantImg.style.transition = `background 0.9s linear`;
 
     setTimeout(() => {
       nameOfPlanet.innerHTML = `${select.value} ${massOfObject} n `;
