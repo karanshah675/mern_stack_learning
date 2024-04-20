@@ -37,6 +37,7 @@ body {
 .calculate {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 #mass {
@@ -80,11 +81,14 @@ body {
   align-items: center;
   /* overflow: hidden; */
 }
-.image img {
+.image .img {
   width: 350px;
+  height: 350px;
   border-radius: 10px;
   overflow: hidden;
-   
+  background: url("images/galaxy.jpg");
+  background-size: contain;
+  transition: background 0.4s linear;
 }
 .hero {
   width: 570px;
@@ -109,15 +113,14 @@ body {
   height: 250px;
   position: relative;
   z-index: -1;
-  /* transition: position 0.4s linear; */
   left: -220px;
 }
 .animationStart {
-  animation: anim 1.4s forwards ease-in-out;
+  animation: anim 0.9s forwards ease-in-out;
 }
 .description article {
   background: #d4d2d22f;
- 
+
   text-align: center;
   border-radius: 10px;
 }
@@ -131,5 +134,37 @@ body {
   }
   100% {
     left: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+ 
+  .header h1 {
+    font-size: 16px;
+  }
+  .container {
+    padding: 10px;
+    font-size: 16px;
+  }
+  #mass {
+    font-size: 16px;
+    width: 100%;
+  }
+  .select {
+    font-size: 16px;
+    width: 100%;
+  }
+  .calculateWeight {
+    font-size: 16px;
+  }
+  .image .img {
+    width: 150px;
+    height: 150px;
+  }
+  .hero {
+    width: 350px;
+  }
+  .description {
+    height: 90px;
+    font-size: 10px;
   }
 }

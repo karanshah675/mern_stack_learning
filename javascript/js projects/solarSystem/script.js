@@ -77,7 +77,6 @@ function calculateWeight(planetName, mass) {
 }
 
 caclBtn.addEventListener("click", () => {
- 
   if (description.classList.contains("animationStart")) {
     description.classList.remove("animationStart");
   }
@@ -86,7 +85,10 @@ caclBtn.addEventListener("click", () => {
     let massOfObject = Math.round(
       calculateWeight(select.value.toLowerCase(), mass.value)
     );
-    plantImg.src = `images/${select.value.toLowerCase()}.jpg`;
+    plantImg.style.background = `url('images/${select.value.toLowerCase()}.jpg `;
+    plantImg.style.backgroundSize = `contain`;
+    plantImg.style.transition = `background 0.4s linear`;
+
     setTimeout(() => {
       nameOfPlanet.innerHTML = `${select.value} ${massOfObject} n `;
       nameOfPlanet.previousElementSibling.innerHTML = `the weight of the object on `;
@@ -99,15 +101,23 @@ caclBtn.addEventListener("click", () => {
       } else {
         description.firstElementChild.style.backgroundColor = "#d4d2d22f";
       }
-    }, 100);
+    }, 1000);
   } else if (select.value !== "none" && mass.value === "") {
-    plantImg.src = `images/galaxy.jpg`;
+    plantImg.style.background = `url('images/galaxy.jpg `;
+    plantImg.style.backgroundSize = `contain`;
+    plantImg.style.transition = `background 0.4s linear`;
     alert("please enter mass");
   } else if (select.value === "none" && mass.value !== "") {
-    plantImg.src = `images/galaxy.jpg`;
+    plantImg.style.background = `url('images/galaxy.jpg `;
+    plantImg.style.backgroundSize = `contain`;
+    plantImg.style.transition = `background 0.4s linear`;
+
     alert("please select the planet");
   } else {
-    plantImg.src = `images/galaxy.jpg`;
+    plantImg.style.background = `url('images/galaxy.jpg `;
+    plantImg.style.backgroundSize = `contain`;
+    plantImg.style.transition = `background 0.4s linear`;
+
     alert("please enter mass and select any planet.");
     return;
   }
