@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Solar System: Document Object Model:30 Days Of JavaScript</title>
+    <title>Solar System</title>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
       rel="stylesheet"
@@ -15,18 +15,20 @@
         <div class="header-container">
           <h1>Calculate a weight of an object on a planet</h1>
           <div class="calculate">
-            <input type="text" id="mass" placeholder="Mass in Kilogram" />
+            <input type="number" id="mass" placeholder="Mass in Kilogram" />
             <select class="select">
               <option value="none">select planet</option>
               <option value="Earth">Earth</option>
-              <option value="Mercury">Mercury</option>
+              <option value="Mars">Mars</option>
               <option value="Venus">Venus</option>
               <option value="Jupiter">Jupiter</option>
               <option value="Saturn">Saturn</option>
               <option value="Uranus">Uranus</option>
               <option value="Neptune">Neptune</option>
             </select>
-            <button class="calculateWeight" id="calc-btn">Calculate weight</button>
+            <button class="calculateWeight" id="calc-btn">
+              Calculate weight
+            </button>
           </div>
         </div>
       </section>
@@ -34,18 +36,23 @@
         <div class="main-container">
           <div class="hero">
             <div class="image">
-              <img src="" width="400" class="planet-image" />
+              <img
+                src="images/galaxy.jpg"
+                width="400"
+                class="planet-image"
+              />
             </div>
-            <div class="flex-item description">
-              <p>
-                the weight of object in
-                <span id="nameOfPlanet">Earth 98 n</span>
-              </p>
+            <div class="flex-item description animationStart">
+              <article>
+                <p>Enter mass to find object value of selected planet.</p>
+                <span id="nameOfPlanet"></span>
+              </article>
             </div>
           </div>
         </div>
       </section>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
