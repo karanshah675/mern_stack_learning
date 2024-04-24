@@ -162,7 +162,7 @@ body {
   gap: 20px;
 }
 .contact-links i {
-  color: var(--secondary-color);
+  color: var(--btn-primary);
 }
 
 @keyframes dark {
