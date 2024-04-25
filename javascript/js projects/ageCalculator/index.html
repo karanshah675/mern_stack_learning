@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>age calculate</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>javascript <span>age calculator</span></h1>
-      <div class="ageFinder">
-        <input type="date" name="" id="" />
-        <button id="calc">Calculate</button>
+    <section class="container">
+      <div class="find-age">
+        <h1>javascript <span>age calculator</span></h1>
+        <div class="ageFinder">
+          <input type="date" name="" id="" placeholder="12/22/22"/>
+          <button id="calc">Calculate</button>
+        </div>
+        <p id="ans">
+          you are <span id="year">30</span> years, <span id="month">4</span>
+          months and <span id="day">17</span> days old.
+        </p>
       </div>
-      <p id="ans">
-        you are <span id="year">30</span> years,<span id="month">4</span> months
-        and <span id="day">17</span>days old.
-      </p>
-    </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
