@@ -163,6 +163,7 @@ body {
 }
 .contact-links i {
   color: var(--btn-primary);
+  cursor: pointer;
 }
 
 @keyframes dark {
