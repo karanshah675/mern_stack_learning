@@ -36,5 +36,3 @@ Absolutely! Here's a breakdown of the steps to get you started with npm:
 * **Package.json:** The `package.json` file stores information about your project, including dependencies, scripts, and configurations. You can edit this file to specify which packages your project relies on and their versions.
 * **Global vs. Local Installation:** By default, npm installs packages locally to your project's `node_modules` folder. You can use the `-g` flag (e.g., `npm install -g <package-name>`) to install a package globally, making it available from anywhere on your system. However, it's generally recommended to keep installations local to your project for better management.
 * **Learn More:** The npm documentation [[https://docs.npmjs.com/](https://docs.npmjs.com/)] is a valuable resource for learning more about npm commands, exploring the package registry, and understanding best practices for using npm in your projects.
-
- 
