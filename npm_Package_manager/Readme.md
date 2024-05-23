@@ -1,11 +1,11 @@
 [video link to learn](https://youtu.be/P3aKRdUyr0s?si=lcuJqtk-JDDXsKTI)
 # what is package manager?
-## Imagine trying to build a house without a trip to the hardware store. You'd need to track down every single screw, nail, piece of lumber, and doorknob yourself. It would be time-consuming, frustrating, and likely lead to missing parts or mismatched pieces.
+> ## Imagine trying to build a house without a trip to the hardware store. You'd need to track down every single screw, nail, piece of lumber, and doorknob yourself. It would be time-consuming, frustrating, and likely lead to missing parts or mismatched pieces.
 
-## A package manager is like a one-stop shop for your computer's software needs. It bundles software together with all its necessary parts (like libraries and configuration files) into a single package. This makes installing, updating, and removing software much easier and more reliable.
+> ## A package manager is like a one-stop shop for your computer's software needs. It bundles software together with all its necessary parts (like libraries and configuration files) into a single package. This makes installing, updating, and removing software much easier and more reliable.
 
 # what is npm?
-## npm stands for Node Package Manager. It's the world's largest software registry specifically designed for the JavaScript programming language https://www.npmjs.com.
+> ## npm stands for Node Package Manager. It's the world's largest software registry specifically designed for the JavaScript programming language https://www.npmjs.com.
 
 # how to use npm?
 Absolutely! Here's a breakdown of the steps to get you started with npm:
@@ -36,3 +36,75 @@ Absolutely! Here's a breakdown of the steps to get you started with npm:
 * **Package.json:** The `package.json` file stores information about your project, including dependencies, scripts, and configurations. You can edit this file to specify which packages your project relies on and their versions.
 * **Global vs. Local Installation:** By default, npm installs packages locally to your project's `node_modules` folder. You can use the `-g` flag (e.g., `npm install -g <package-name>`) to install a package globally, making it available from anywhere on your system. However, it's generally recommended to keep installations local to your project for better management.
 * **Learn More:** The npm documentation [[https://docs.npmjs.com/](https://docs.npmjs.com/)] is a valuable resource for learning more about npm commands, exploring the package registry, and understanding best practices for using npm in your projects.
+
+**Commands**
+``` bash
+# GET VERSION
+npm -v (or --version)
+
+# GET HELP
+npm help
+npm
+
+# CREATE PACKAGE.JSON
+npm init
+npm init -y (or --yes)
+
+# SET DEFAULTS
+npm config set init-author-name "YOUR NAME"
+npm set init-license "MIT"
+
+# GET DEFAULTS
+npm config get init-author-name
+npm get init-license
+
+# REMOVE DEFAULTS
+npm config delete init-author-name
+npm delete init-license
+
+# INSTALLING LOCAL PACKAGES
+npm install lodash --save (or npm install --save lodash)
+npm install moment --save
+npm install gulp gulp-sass --save-dev
+
+# MOVE TO ANOTHER FOLDER
+npm install
+npm install --production
+
+# REMOVING MODULES
+npm uninstall gulp-sass --save-dev
+npm remove gulp --save-dev
+
+#INSTALL CERTAIN VERSIONS
+npm install lodash@4.17.3 --save
+
+# UPDATE
+npm update lodash --save
+
+# INSTALL GLOBAL MODULE
+npm install -g nodemon
+npm install -g live-server
+
+# RUN NODEMON
+nodemon
+
+# FIND ROOT FOLDER
+npm root -g
+
+# REMOVE GLOBAL PACKAGES
+npm remove -g nodemon
+
+# LISTING PACKAGES
+npm list
+npm list --depth 0
+npm list --depth 1
+
+# INSTALL LIVE-SERVER LOCALLY
+npm install live-server --save-dev
+
+# NPM SCRIPT
+"scripts": {
+    "start": "node index.js",
+    "dev": "live-server"
+  }
+```

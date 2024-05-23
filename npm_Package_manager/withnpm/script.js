@@ -1,4 +1,6 @@
+//we use require method to access pacakge methods
 const prompt = require("prompt-sync")();
+
 
 function calculateArea(length, width) {
   return length * width;
