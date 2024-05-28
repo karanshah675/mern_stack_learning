@@ -1,1 +1,0 @@
-const h1 = <h1>this is kran</h1>
