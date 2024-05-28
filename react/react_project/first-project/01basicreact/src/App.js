@@ -1,5 +1,12 @@
+import Hello from "./Hello";
+
 function App() {
-  return <h1>this is first react ⚛️</h1>;
+  return (
+    <>
+      <Hello/>
+      <h1>this is old component</h1>
+    </>
+  )
 }
 
 export default App;
